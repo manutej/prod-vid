@@ -27,3 +27,15 @@ Each lesson: what happened, the evidence, and the fix. Read before storyboarding
 23. **Show the product, not the machine.** v7's blind executive: "it shows how the machine works but never what it produced." Files and logs are paperwork; end each beat on a screen a buyer wants.
 24. **A gate can pass while missing its intent.** v8's sound gate passed with the hit at the zoom, a second before the logo. Anchor gates to what the viewer sees.
 25. **Stakes decide the executive score.** A true but personal use case capped the executive lens at 4. An enterprise problem with a time or money outcome is the fix; use Example mode when no real case may be shown.
+
+## v1.3 (three branches, twelve blind critics)
+
+26. **Failures create rules.** All three product engineers, independently: showing the rules first and then failed tries that break them reads as "ignored its own brief". Order the story Ask → try → visible failure → the rule it produces → next try → pass, and show the rules as visible filters on the final product.
+27. **The camera rides the thread.** All three motion designers, independently: a line that links slides is still slides. One continuous shot following the red line, one hero word or number per idea at full scale, never more than about 30% of the frame empty.
+28. **Self-correction must happen to the product.** Two executives: struck-through text lists read as a log. Show the product itself going wrong, being caught and rebuilding on screen.
+29. **The climax must be audible on phones.** Two sound designers: logo hits with 90%+ energy below 150 Hz land in near-silence on phone and laptop speakers. Give the hit a 120–400 Hz body and a 2–6 kHz transient; at least 10% of climax energy above 2 kHz (gate G13).
+30. **The tagline must match the demo.** Executives on B and C: an abstract company line after a single concrete demo reads as "studio or bot?". Match the line to the demo, or show the same machine on two or three briefs.
+31. **Buyer-facing rules.** Four lenses flagged "Never ask clarifying questions" as reckless. Use "Assumptions logged for review" or a governance rule a buyer values.
+32. **Word-per-chip parsing is decoration.** Chip only the entities that become rules, and draw each link.
+33. **Never zoom into an empty element or upscale raster.** Two branches ended on a pixelated pill that read as a render bug. Zoom into a real element at vector scale, or match-cut.
+34. **The ceiling was structure, not subject.** Churn, payments and policy all scored 5.0–5.5 blind with the same findings. Changing the scenario alone does not move the score.

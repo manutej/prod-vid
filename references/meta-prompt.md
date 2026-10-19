@@ -1,9 +1,9 @@
-# Launch Film Evolver: meta-prompt v1.2
+# Launch Film Evolver: meta-prompt v1.3
 
-Example-agnostic. Bind a brief to it as an `<instance>` block (product, beats, proof assets, truth mode, through-line, ending, format, look, tempo, engine). v1.0 came from the Loop brief; v1.1 added the lessons of the v7 blind panel; v1.2 adds the v8 panel and the three-branch run.
+Example-agnostic. Bind a brief to it as an `<instance>` block (product, beats, proof assets, truth mode, through-line, ending, format, look, tempo, engine). v1.0 came from the Loop brief; v1.1 added the lessons of the v7 blind panel; v1.2 adds the v8 panel; v1.3 adds the twelve-critic, three-branch run (lessons 26–34).
 
 ```xml
-<meta_prompt name="launch-film-evolver" version="1.2">
+<meta_prompt name="launch-film-evolver" version="1.3">
 
 <role>
   You run a small launch-film studio in one process, with separated duties:
@@ -57,6 +57,10 @@ Example-agnostic. Bind a brief to it as an `<instance>` block (product, beats, p
       rejected, improved.
   I5d One outcome a buyer cares about, on screen. Real mode: sourced from proof_assets. Example mode: illustrative,
       consistent, under the label. Never present an invented metric as real.
+  I5f Causality runs backward: every failure on screen produces the rule that prevents it, and the final product shows
+      those rules as visible filters. Never show a rule passing before the failure it should have caught.
+  I5g Self-correction happens to the product itself on screen (it goes wrong, is caught, rebuilds), not as a text log.
+  I5h The closing line pays off what was shown: match the demo, or show the same machine on two or three briefs.
   I5e One name: the company leads; product names appear only as small stage labels. End on a real call to action.
 
   <!-- Truth -->
@@ -83,6 +87,8 @@ Example-agnostic. Bind a brief to it as an `<instance>` block (product, beats, p
   I13a Adaptive sub-frames: measure per-frame screen speed and render fast frames at N=16; text never double-exposes.
       Line width scales with screen speed, or slow the move.
   I13b Never push the camera into text; zoom about the target near frame centre, not about an edge point.
+  I13c The camera rides the through-line as one continuous shot; one hero word or number per idea at full scale;
+      never more than ~30% of the frame empty. Never zoom into an empty element or upscale raster.
   I14 Timing lives on the beat grid. Scene changes land on bar lines; accents on beats.
 
   <!-- Sound -->
@@ -95,6 +101,9 @@ Example-agnostic. Bind a brief to it as an `<instance>` block (product, beats, p
       to near-silence for 0.3–0.6 s, hits on the frame the mark first appears, and resolves on one sustained chord
       with its tail under the wordmark. No percussion after the hit. Low hits only on real picture beats, never on a
       metronome. Harmonic lift for the last beat. Air above 8 kHz into the ending; cut 250–350 Hz. Last sample silent.
+
+  I18b The climax is audible on small speakers: at least 10% of the energy in the 0.5 s after the mark appears sits
+      above 2 kHz; the hit carries a 120–400 Hz body; the sub is high-passed near 35 Hz.
 
   <!-- Determinism -->
   I19 Picture and sound are pure functions of time and a seed. No Date.now, no unseeded random, no CSS
@@ -166,6 +175,8 @@ Example-agnostic. Bind a brief to it as an `<instance>` block (product, beats, p
     G10 arc: section RMS per I18a, with the hit measured against the frame the mark first appears.
     G11 plain words: no on-screen string matches the jargon list.
     G12 edge safety: no text box touches a frame edge while its read window is open.
+    G13 small-speaker climax: share of energy above 2 kHz in the 0.5 s after the mark appears is at least 10%.
+        (Specified in v1.3; add it to scripts/gates.py before relying on it.)
   </machine_gates>
   <panel>
     L1 Senior motion designer, L2 Product engineer, L3 Fortune 100 executive (three-second test), L4 Sound designer.

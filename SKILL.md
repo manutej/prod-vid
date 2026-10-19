@@ -11,10 +11,10 @@ Never ask clarifying questions. Decide, record the decision with a reason in the
 
 ## Source of truth: the prod-vid repo
 
-Everything this skill runs on lives in **github.com/manutej/prod-vid**, pinned to branch **release/v1.2** (the saved skill also pins the exact commit):
+Everything this skill runs on lives in **github.com/manutej/prod-vid**, pinned to branch **release/v1.3** (the saved skill also pins the exact commit):
 
 ```bash
-git clone --depth 1 --branch release/v1.2 https://github.com/manutej/prod-vid "$PROD_VID_HOME"   # default: ./prod-vid
+git clone --depth 1 --branch release/v1.3 https://github.com/manutej/prod-vid "$PROD_VID_HOME"   # default: ./prod-vid
 ```
 
 In a cloud session, attach the repo first (it is private), then clone. If the clone fails, say so and stop; do not rebuild the engine from memory.
@@ -23,8 +23,8 @@ Read these before starting, in this order:
 
 | File | What it is |
 |---|---|
-| `references/meta-prompt.md` | Launch Film Evolver v1.2: typed brief, invariants I1–I19, wonder devices, pipeline S0–S11, evolution E1–E9, gates G1–G12, stopping rule, output contract |
-| `references/lessons.md` | 25 lessons with evidence (full detail in `lessons-detailed.md`) |
+| `references/meta-prompt.md` | Launch Film Evolver v1.3: typed brief, invariants I1–I19, wonder devices, pipeline S0–S11, evolution E1–E9, gates G1–G12, stopping rule, output contract |
+| `references/lessons.md` | 34 lessons with evidence (full detail in `lessons-detailed.md`) |
 | `references/panel.md` | The four blind critic prompts and branch selection |
 | `references/orchestration.md` | Producer launch, findings handoff, milestone pages, subject decisions |
 | `references/sources.md` | Lineage and licenses |
