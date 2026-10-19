@@ -39,3 +39,14 @@ Each lesson: what happened, the evidence, and the fix. Read before storyboarding
 32. **Word-per-chip parsing is decoration.** Chip only the entities that become rules, and draw each link.
 33. **Never zoom into an empty element or upscale raster.** Two branches ended on a pixelated pill that read as a render bug. Zoom into a real element at vector scale, or match-cut.
 34. **The ceiling was structure, not subject.** Churn, payments and policy all scored 5.0–5.5 blind with the same findings. Changing the scenario alone does not move the score.
+
+## Board bar (five-seat blind board on branch B: 0 ADVANCE · 5 HOLD, mean 4.0)
+
+35. **Show the human in the loop.** All five seats: "Never ask clarifying questions" and an unowned "Ruling" read as an AI acting without oversight. Show an escalation rule ("Ambiguity routes to the controller"), a named human sign-off at the conflict, and an approver with timestamp before any action that moves money.
+36. **Name the checks and their owner.** All five seats: "12 of 12 checks" as unlabelled squares is the system grading itself. Name the checks, say who owns them (finance, audit, an independent party), and show one failing.
+37. **Measured, not flagged.** CFO, CEO, VC, director: "flagged" is not "recovered". Show the funnel a board trusts: flagged → confirmed by a reviewer → recovered, with precision, against a measured baseline.
+38. **Plausible magnitudes.** Four seats: a 4% duplicate rate read as invented or over-flagging. Illustrative figures must sit inside believable industry ranges.
+39. **Say what is being bought.** CEO, CTO, VC: product, service or platform; how it connects to the systems of record; how it is priced or structured.
+40. **Platform, not a tool.** CEO and VC: one department's task under a company-level tagline reads as a demo. Show the same governed loop on a second, unrelated problem, or narrow the claim.
+41. **Promise control, not autonomy.** The risk seat: "evolves itself" sounds uncontrolled to a regulator. Pair improvement with governance: versioned, reviewed, auditable change.
+42. **Example numbers are discounted to near zero by the CFO.** One real, verifiable proof point outweighs any number of illustrative figures.
