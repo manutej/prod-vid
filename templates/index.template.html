@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=__W__, height=__H__">
+<link rel="stylesheet" href="fonts.css">
+<script src="gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:__W__px;height:__H__px;overflow:hidden;background:#ECEDE6}
+#root{position:absolute;left:0;top:0;width:__W__px;height:__H__px;overflow:hidden}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:#ECEDE6;transform-origin:0 0;transform:scale(__SCALE__)}
+#viewport{position:absolute;left:0;top:0;width:1920px;height:1080px;perspective:2000px;perspective-origin:960px 540px}
+#world{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d;transform-origin:0 0}
+.plane,.card,.wpart,.tile{position:absolute;left:0;top:0;transform-origin:0 0}
+.tx{position:absolute;white-space:pre;line-height:1.25}
+.disp{font-family:'Zen Old Mincho'}.ui{font-family:'Zen Kaku Gothic New'}.mono{font-family:'IBM Plex Mono'}
+.card{background:#F7F7F2;border-radius:20px;box-shadow:0 60px 80px -50px rgba(30,14,63,.42),0 0 0 1px rgba(30,14,63,.07)}
+.clipbox{position:absolute;overflow:hidden}.labrow{position:absolute;left:0;top:0;white-space:nowrap}
+.hair{position:absolute}
+.cur{display:inline-block;width:5px;height:64px;margin-left:6px;vertical-align:-10px;background:#B8401A;border-radius:2px;transform-origin:50% 50%}
+.tile{height:50px;border:2px solid #1E0E3F;border-radius:10px;background:#F7F7F2;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 16px -12px rgba(30,14,63,.35)}
+.rrow{position:absolute;white-space:nowrap;display:flex;align-items:center;height:44px}
+.chk{position:relative;display:inline-block;width:32px;height:32px;border-radius:50%;background:#1E0E3F;flex:none}
+.tick{position:absolute;left:10px;top:7px;width:9px;height:15px;border-right:3px solid #ECEDE6;border-bottom:3px solid #ECEDE6;transform:rotate(45deg)}
+.chk.warn{background:transparent;border:3px solid #B8401A}
+.bang{position:absolute;left:12px;top:5px;width:3px;height:12px;background:#B8401A}.bang2{position:absolute;left:12px;top:20px;width:3px;height:3px;background:#B8401A}
+.pass{position:absolute;display:flex;align-items:center;height:52px;padding:0 24px 0 18px;border-radius:26px;background:#645A78;transform-origin:0 50%;white-space:nowrap}
+.pass .tick{position:relative;left:auto;top:-3px;display:inline-block}
+.node{position:absolute;width:22px;height:22px;border-radius:50%;transform-origin:50% 50%}.n0{border:3px solid #1E0E3F;background:#ECEDE6}.n2{background:#1E0E3F}.n3{background:#B8401A}
+.sq{position:absolute;width:26px;height:26px;border:2px solid #1E0E3F;border-radius:5px;transform-origin:50% 50%}
+.pillind{position:absolute;top:22px;height:46px;border-radius:23px;background:#141413}
+.navp{position:absolute;height:46px;display:flex;align-items:center;padding:0 14px;border-radius:23px;white-space:nowrap;font-family:'IBM Plex Mono'}
+.navp.out{border:1.5px solid rgba(30,14,63,.35)}
+.kb{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;padding:0 4px;border:1.5px solid #1E0E3F;border-radius:5px}
+.stat{position:absolute;white-space:nowrap}
+.ahead{position:absolute;width:0;height:0;border-left:18px solid #B8401A;border-top:10px solid transparent;border-bottom:10px solid transparent;transform-origin:0 50%}
+.search{position:absolute;border:1.5px solid rgba(30,14,63,.35);border-radius:10px;background:#F3F3EE}
+.chipbox{position:absolute;display:flex;flex-wrap:wrap;gap:10px}
+.chipx{position:relative;height:38px;border:1.5px solid rgba(30,14,63,.28);border-radius:19px;display:flex;align-items:center;padding:0 12px;white-space:nowrap;transform-origin:0 50%}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;background:#1E0E3F;flex:none}
+.lrow{position:absolute;border-top:1px solid rgba(30,14,63,.16)}
+.rule{position:absolute;left:0;top:10px;bottom:10px;width:6px;border-radius:3px;background:#706781}
+.ell{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tagx{position:absolute;border:1.5px solid rgba(30,14,63,.35);padding:3px 10px;border-radius:5px;white-space:nowrap}
+.exc{position:absolute;background:#EFEFE8;padding:20px 26px 22px 30px;border-radius:2px}
+#mark{position:absolute;left:0;top:0;width:1920px;height:1080px;visibility:hidden}
+.markbg{position:absolute;inset:0;background:#141413}.markin{position:absolute;inset:0;transform-origin:0 0}
+.glow{position:absolute;border-radius:6px}
+#thread{position:absolute;left:0;top:0;overflow:visible}
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="24" data-width="__W__" data-height="__H__" data-fps="__FPS__"
+     data-composition-variables='{"off":{"type":"number","default":0}}'>
+  <div id="stage" class="clip" data-start="0" data-duration="24" data-track-index="0">
+    <div id="viewport"><div id="world"></div></div>
+    <div id="mark"></div>
+    <svg id="thread" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+      </div>
+</div>
+<script src="data.js"></script>
+<script src="film.js"></script>
+<script>
+  window.__timelines = window.__timelines || {};
+  const V = (window.__hyperframes && window.__hyperframes.getVariables) ? window.__hyperframes.getVariables() : {};
+  const OFF = +(V.off || 0);
+  const P = { t: 0 };
+  const tl = gsap.timeline({ paused: true });
+  tl.to(P, { t: 24, duration: 24, ease: 'none', onUpdate: () => window.__film.render(Math.max(0, Math.min(23.9999, P.t + OFF))) }, 0);
+  window.__timelines["main"] = tl;
+  tl.seek(0); window.__film.render(OFF);
+  if (document.fonts) document.fonts.ready.then(() => window.__film.render(P.t + OFF));
+</script>
+</body></html>

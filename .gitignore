@@ -1,0 +1,6 @@
+node_modules/
+films/
+*.mp4
+*.wav
+__pycache__/
+.dna/
