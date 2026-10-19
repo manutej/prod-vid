@@ -50,3 +50,12 @@ Each lesson: what happened, the evidence, and the fix. Read before storyboarding
 40. **Platform, not a tool.** CEO and VC: one department's task under a company-level tagline reads as a demo. Show the same governed loop on a second, unrelated problem, or narrow the claim.
 41. **Promise control, not autonomy.** The risk seat: "evolves itself" sounds uncontrolled to a regulator. Pair improvement with governance: versioned, reviewed, auditable change.
 42. **Example numbers are discounted to near zero by the CFO.** One real, verifiable proof point outweighs any number of illustrative figures.
+
+## Branch D (craft 6.0, board 4.2)
+
+43. **The four craft fixes work, and they barely move the board.** Craft rose 5.5 → 6.0 and the self-score gap fell to 0.75; the board moved 4.0 → 4.2. Boards are moved by evidence, governance and scope, not polish.
+44. **Domain-check every formula before building.** Three seats caught "exposure = landed cost × new rate" in seconds; exposure is the increase over the prior rate. One wrong formula costs more trust than any craft flaw. Get each on-screen formula verified by a domain review before storyboarding.
+45. **No self-referential checks.** "Total sums to total" proves nothing. Every named check must test something independent (a vendor master, a ledger, a source document).
+46. **Show the product shell.** Product engineer's top fix: a real app window with a typed prompt field that stays visible and becomes the rule chips. Floating cards read as a diagram.
+47. **The camera fix needs an engine change.** Five consecutive motion-designer verdicts asked for one continuous camera path along the thread. A card-in-screen-space engine cannot do it; build the film in world coordinates with a single camera path.
+48. **Overclaiming taglines cost the risk seat.** "One sentence in. A finished product out." read as "no human in the loop". Promise control.
