@@ -11,10 +11,10 @@ Never ask clarifying questions. Decide, record the decision with a reason in the
 
 ## Source of truth: the prod-vid repo
 
-Everything this skill runs on lives in **github.com/manutej/prod-vid**, pinned to tag **v1.2**:
+Everything this skill runs on lives in **github.com/manutej/prod-vid**, pinned to branch **release/v1.2** (the saved skill also pins the exact commit):
 
 ```bash
-git clone --depth 1 --branch v1.2 https://github.com/manutej/prod-vid "$PROD_VID_HOME"   # default: ./prod-vid
+git clone --depth 1 --branch release/v1.2 https://github.com/manutej/prod-vid "$PROD_VID_HOME"   # default: ./prod-vid
 ```
 
 In a cloud session, attach the repo first (it is private), then clone. If the clone fails, say so and stop; do not rebuild the engine from memory.
@@ -64,4 +64,4 @@ final.mp4; ffprobe JSON proving the audio stream and exact duration; loudness re
 
 ## Evolving the skill
 
-New lessons and meta-prompt changes go to the repo as a new tag (v1.3, …) with evidence; then update the tag in this file. Never edit a tagged release.
+New lessons and meta-prompt changes go to the repo as a new release branch (release/v1.3, …) with evidence; then update the branch and commit in the saved skill. Never push to an existing release branch.
